@@ -1,3 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
+#width-size {
+  width: 2000px;
+}
