@@ -4,14 +4,60 @@
 
 #width-size {
   width: 1000px;
+  overflow: auto;
 }
 
 #home-list {
   display: flex;
+  width: 1000px;
+  position: relative;
 }
 
 #search {
   color: snow;
   background-color: gray;
-  right: 0%;
+  width: 200px;
+  margin-left: auto;
+  display: flex;
+  justify-content: end;
+}
+
+#search-box {
+  width: auto;
+  text-align: end;
+  overflow: hidden;
+}
+
+#main {
+  display: flex;
+  width: 1000px;
+}
+
+#board-list {
+  width: 200px;
+  height: 1000px;
+  border: 1px solid brown;
+}
+
+#post-top {
+  display: flex;
+  margin-top: 20px;
+  justify-content: end;
+  margin-right: 5px;
+}
+
+#show-number {
+  margin-left: 5px;
+}
+
+#post-list {
+  width: 800px;
+  height: 1000px;
+  border: 1px solid black;
+}
+
+#post-list ol li {
+  border: 1px solid blue;
+  width: 700px;
+  margin: 10px;
 }
