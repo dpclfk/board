@@ -3,13 +3,13 @@
 }
 
 #width-size {
-  width: 1000px;
+  width: 1005px;
   overflow: auto;
 }
 
 #home-list {
   display: flex;
-  width: 1000px;
+  /* width: 1000px; */
   position: relative;
 }
 
@@ -30,13 +30,14 @@
 
 #main {
   display: flex;
-  width: 1000px;
+  /* width: 1000px; */
 }
 
 #board-list {
   width: 200px;
   height: auto;
   border: 1px solid brown;
+  margin-right: 5px;
 }
 
 #post-top {
@@ -84,6 +85,7 @@
 
 #new-post-headline {
   margin-left: 5px;
+  overflow: scroll;
   /* margin-right: 50px; */
   /* border: 1px solid black; */
 }
@@ -102,6 +104,7 @@
   margin-top: 10px;
   height: 500px;
   border: 1px solid black;
+  overflow: scroll;
 }
 
 #new-post-button {
