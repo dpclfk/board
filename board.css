@@ -35,29 +35,82 @@
 
 #board-list {
   width: 200px;
-  height: 1000px;
+  height: auto;
   border: 1px solid brown;
 }
 
 #post-top {
   display: flex;
   margin-top: 20px;
-  justify-content: end;
+  /* justify-content: center; */
   margin-right: 5px;
+}
+
+#now-board {
+  margin-left: 20px;
+}
+
+#show-post {
+  margin-left: auto;
 }
 
 #show-number {
   margin-left: 5px;
 }
 
-#post-list {
+#post {
   width: 800px;
-  height: 1000px;
+  height: auto;
   border: 1px solid black;
 }
 
 #post-list ol li {
   border: 1px solid blue;
-  width: 700px;
+  width: 720px;
   margin: 10px;
+}
+
+#new-post {
+  margin-left: 50px;
+}
+
+#new-post-head {
+  display: flex;
+  /* justify-content: left; */
+  margin-top: 20px;
+  width: 700px;
+  border: 1px solid black;
+}
+
+#new-post-headline {
+  margin-left: 5px;
+  /* margin-right: 50px; */
+  /* border: 1px solid black; */
+}
+
+#new-post-board {
+  border-right: 1px solid black;
+  padding-right: 30px;
+  /* text-align: center; */
+}
+
+#new-post-body {
+  width: 700px;
+}
+
+#new-post-text {
+  margin-top: 10px;
+  height: 500px;
+  border: 1px solid black;
+}
+
+#new-post-button {
+  width: 80px;
+  height: 30px;
+  margin: 10px 0 10px 0;
+  /* align-self: end; */
+}
+
+.none {
+  display: none;
 }
