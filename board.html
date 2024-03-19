@@ -8,9 +8,12 @@
   <body>
     <div id="width-size">
       <div id="home-list">
-        <button>Home</button>
-        <button>스크랩</button>
+        <div id="home-favorites">
+          <button>Home</button>
+          <button>즐겨찾기</button>
+        </div>
         <div id="search">
+          <div id="search-type">글 제목</div>
           <div id="search-box">검색어를 입력하세요</div>
           <button>Q</button>
         </div>
@@ -26,35 +29,91 @@
           </ul>
         </div>
         <div id="post">
-          <div id="post-list" class="none">
+          <div id="post-list" class="">
             <div id="post-top">
               <div id="now-board">공지사항</div>
-              <div id="show-post">보여줄 글 갯수</div>
-              <div id="show-number">20개</div>
+              <div id="show-post">
+                보여줄 글 갯수 <span id="show-number">20</span>개
+              </div>
             </div>
-            <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
-            <button id="new-post-create">글 쓰기</button>
+            <div id="post-type">
+              <div id="post-type-number">번호</div>
+              <div id="post-type-head">글 제목</div>
+              <div class="post-type-utvg">
+                <div class="post-type-user">작성자</div>
+                <div class="post-type-time">작성일자</div>
+                <div class="post-type-view">조회수</div>
+                <div class="post-type-good">추천수</div>
+              </div>
+            </div>
+            <div id="post-notice">
+              <ul>
+                <div class="post-list-li">
+                  <li>공지</li>
+                  <div class="utvg post-type-utvg">
+                    <div class="post-type-user">작성자</div>
+                    <div class="post-type-time">작성일자</div>
+                    <div class="post-type-view">조회수</div>
+                    <div class="post-type-good">추천수</div>
+                  </div>
+                </div>
+                <div>
+                  <li>
+                    공지
+                    <div>1</div>
+                  </li>
+                </div>
+                <div><li>공지</li></div>
+                <div><li>공지</li></div>
+                <div><li>공지</li></div>
+              </ul>
+            </div>
+            <div id="post-common">
+              <ol>
+                <div>
+                  <li>제목</li>
+                  <div>1</div>
+                </div>
+                <div>
+                  <li>
+                    제목'
+                    <div>1</div>
+                  </li>
+                </div>
+                <div><li>제목</li></div>
+                <div><li>제목</li></div>
+                <div><li>제목</li></div>
+                <div><li>제목</li></div>
+                <div><li>제목</li></div>
+                <div><li>제목</li></div>
+                <div><li>제목</li></div>
+                <div><li>제목</li></div>
+                <div><li>제목</li></div>
+                <div><li>제목</li></div>
+                <div><li>제목</li></div>
+                <div><li>제목</li></div>
+                <div><li>제목</li></div>
+                <div><li>제목</li></div>
+                <div><li>제목</li></div>
+                <div><li>제목</li></div>
+                <div><li>제목</li></div>
+                <div><li>제목</li></div>
+              </ol>
+            </div>
+            <div class="flex-center">
+              <div id="post-page">
+                <div id="pre">이전</div>
+                <div id="post-page1">1</div>
+                <div id="post-page2">2</div>
+                <div id="post-page3">3</div>
+                <div id="post-page4">4</div>
+                <div id="post-page5">5</div>
+                <div id="next">다음</div>
+              </div>
+            </div>
+            <div id="new-post-button">
+              <button id="new-post-write">글 쓰기</button>
+            </div>
           </div>
           <div id="new-post" class="none">
             <div id="new-post-head">
@@ -67,13 +126,13 @@
               <div id="new-post-text">
                 <div>내용을 입력해주세요</div>
               </div>
-              <button id="new-post-button">글작성</button>
+              <button id="new-post-create">글 작성</button>
             </div>
           </div>
-          <div id="now-post" class="">
+          <div id="now-post" class="none">
             <div id="now-post-head">대충 제목</div>
             <div id="now-post-body">대충 내용</div>
-            <button id="scrap">스크랩</button>
+            <button id="scrap">즐겨찾기</button>
           </div>
         </div>
       </div>
@@ -81,4 +140,6 @@
   </body>
 </html>
 
-git add . git commit -m "글페이지" git push origin develop
+<!-- git add .;git commit -m "글페이지";git push origin develop -->
+<!-- 1. 글밑에 파란줄을 검은줄처럼 하고싶다.
+2. 글 한줄에 div가 너무 많이 들어가는거같다. -->
