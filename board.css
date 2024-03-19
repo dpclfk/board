@@ -72,7 +72,9 @@
 }
 
 #new-post-create {
-  margin: 10px;
+  width: 80px;
+  height: 30px;
+  margin: 10px 0 10px 0;
 }
 
 #new-post {
@@ -116,6 +118,16 @@
   height: 30px;
   margin: 10px 0 10px 0;
   /* align-self: end; */
+}
+
+#now-post-head {
+  border: 1px solid black;
+  margin: 10px;
+}
+#now-post-body {
+  border: 1px solid black;
+  margin: 10px;
+  min-height: 100px;
 }
 
 .none {
