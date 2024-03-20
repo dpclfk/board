@@ -50,10 +50,12 @@
   width: 30px;
 }
 /* 상단바 끝 */
+
 #main {
   display: flex;
   /* width: 1000px; */
 }
+
 /* 좌측칸 시작 */
 #board-list {
   width: 20%;
@@ -64,7 +66,7 @@
 }
 
 #board-list li {
-  margin-top: 10px;
+  padding-top: 10px;
 }
 /* 좌측칸 끝 */
 
