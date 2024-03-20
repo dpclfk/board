@@ -6,6 +6,8 @@
   /* width: 1500px; */
   width: 80%;
   /* overflow: auto; */
+  min-width: 1000px;
+  margin: auto;
 }
 /* 상단바 시작 */
 #header {
@@ -13,15 +15,21 @@
   /* width: 1000px; */
   /* position: relative; */
   justify-content: space-between;
-  height: 40px;
+  height: 60px;
+  background-color: rgb(188, 244, 225);
   /* flex: 1; */
   /* padding-bottom: 5px; */
   /* margin-bottom: 1px; */
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 5px;
 }
 
 #home-favorites {
   height: 25px;
   display: flex;
+  /* flex-wrap: 10px; */
+  gap: 20px;
 }
 
 #search {
@@ -39,6 +47,9 @@
   /* flex: 1; */
   width: 80px;
   border: 1px solid black;
+  display: flex;
+  height: 25px;
+  align-items: center;
 }
 
 #search-box {
@@ -47,13 +58,17 @@
   flex: 1;
   background-color: gray;
   /* text-align: end; */
-  overflow: hidden;
+  overflow: scroll;
   border: 1px solid black;
   border-left: 0px;
+  display: flex;
+  height: 25px;
+  align-items: center;
 }
 
 #search button {
   width: 30px;
+  height: 25px;
 }
 /* 상단바 끝 */
 
@@ -93,7 +108,7 @@
   flex: 1;
   padding: 20px;
   height: auto;
-  border-top: 1px solid black;
+  border-top: 1px solid rgb(163, 163, 212);
 }
 
 #post-header {
@@ -122,7 +137,8 @@
   /* width: 40px; */
   flex: 1;
   /* border-right: 1px solid black; */
-  text-align: center;
+  /* text-align: center; */
+  padding-left: 5px;
 }
 
 .post-type-utvg {
@@ -137,24 +153,28 @@
   /* justify-content: space-between; */
   /* width: 250px; */
   border-left: 1px dotted black;
-  text-align: center;
+  /* text-align: center; */
   /* flex: 1; */
 }
 
 .post-type-user {
   width: 120px;
+  padding-left: 5px;
 }
 
 .post-type-time {
   width: 70px;
+  text-align: center;
 }
 
 .post-type-view {
   width: 60px;
+  text-align: center;
 }
 
-.post-type-good {
+.post-type-like {
   width: 60px;
+  text-align: center;
 }
 
 #post-list ol {
@@ -221,44 +241,88 @@
   /* align-self: end; */
 }
 
-#new-post-write {
-  width: 70px;
-}
+/* 메인페이지 끝 */
 
-#new-post {
+/* 새글작성 페이지 시작 */
+
+/* #new-post-write {
+  width: 70px;
+} */
+
+/* #new-post {
   margin-left: 50px;
-}
+} */
 
 #new-post-head {
   display: flex;
   /* justify-content: left; */
-  margin-top: 20px;
-  width: 700px;
-  border: 1px solid black;
+  /* margin-top: 20px; */
+  /* width: 700px; */
+  border: 1px solid rgb(163, 163, 212);
+  height: 30px;
+  /* align-items: center; */
+  font-size: 16px;
 }
 
-#new-post-headline {
-  margin-left: 5px;
+#new-post-board {
+  border-right: 1px solid rgb(163, 163, 212);
+  padding: 0px 5px 0px 5px;
+  width: 170px;
+  /* text-align: center; */
+  height: 29px;
+  display: flex;
+  align-items: center;
+  /* flex: 1; */
+
+  /* font-size: 16px; */
+}
+
+#new-post-header {
+  /* padding-left: 5px; */
+  padding: 0px 5px 0px 5px;
   overflow: scroll;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  flex: 1;
+
   /* margin-right: 50px; */
   /* border: 1px solid black; */
 }
 
-#new-post-board {
-  border-right: 1px solid black;
-  padding-right: 30px;
-  /* text-align: center; */
+#new-post-main {
+  /* width: 700px; */
+  /* margin-bottom: 10px; */
+  margin-top: 10px;
+  border: 1px solid rgb(163, 163, 212);
 }
 
-#new-post-body {
-  width: 700px;
+#new-post-file {
+  height: 30px;
+  border-bottom: 1px solid rgb(163, 163, 212);
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#new-post-text-type {
+  height: 30px;
+  border-bottom: 1px solid rgb(163, 163, 212);
+  padding: 5px;
+  display: flex;
 }
 
 #new-post-text {
-  margin-top: 10px;
   height: 500px;
-  border: 1px solid black;
   overflow: scroll;
+  padding: 5px;
+}
+
+#new-post-create {
+  height: 30px;
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
 }
 
 #now-post-head {
