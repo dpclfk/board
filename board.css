@@ -63,10 +63,13 @@
   border: 1px solid brown;
   margin-right: 5px;
   /* padding-right: 5px; */
+  /* display: block; */
+  padding: 10px 10px 10px 20px;
 }
 
 #board-list li {
   padding-top: 10px;
+  display: block;
 }
 /* 좌측칸 끝 */
 
@@ -88,16 +91,19 @@
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
+  padding-bottom: 7px;
   border-bottom: 1px solid black;
+  background-color: rgba(209, 205, 205, 0.5);
 }
 
-#post-type-number {
-  width: 40px;
+.post-type-number {
+  width: 50px;
   /* border-right: 1px solid black; */
   text-align: center;
+  border-right: 1px dotted black;
 }
 
-#post-type-head {
+.post-type-head {
   /* width: 40px; */
   flex: 1;
   /* border-right: 1px solid black; */
@@ -121,7 +127,7 @@
 }
 
 .utvg {
-  padding-top: 10px;
+  /* padding-top: 10px; */
 }
 
 .post-type-user {
@@ -142,9 +148,18 @@
 
 #post-list ol,
 ul {
-  padding-left: 25px;
-  margin-top: 10px;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#post-notice {
+  background-color: rgba(169, 165, 165, 0.5);
+}
+
+#post-common {
   margin-bottom: 10px;
+  background-color: rgba(244, 242, 242, 0.5);
 }
 
 /* #post-list ul div {
@@ -158,17 +173,20 @@ ul {
 .post-list-li {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid blue;
+  border-bottom: 1px solid rgb(163, 163, 212);
   /* padding-top: 10px; */
+  /* display: block; */
 }
 
 #post-list li {
   /* border-bottom: 1px solid blue; */
   /* width: 250px; */
   flex: 1;
-  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 7px;
   /* margin-bottom: 10px; */
-  padding-left: 40px;
+  /* padding-left: 40px; */
+  /* display: block; */
 }
 
 .flex-center {
