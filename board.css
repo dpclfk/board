@@ -47,9 +47,10 @@
   /* flex: 1; */
   width: 80px;
   border: 1px solid black;
-  display: flex;
+  /* display: flex; */
   height: 25px;
-  align-items: center;
+  /* align-items: center; */
+  padding: 3px 0 0 3px;
 }
 
 #search-box {
@@ -61,7 +62,8 @@
   overflow: scroll;
   border: 1px solid black;
   border-left: 0px;
-  display: flex;
+  /* display: flex; */
+  padding: 3px 0 0 3px;
   height: 25px;
   align-items: center;
 }
@@ -266,7 +268,7 @@
 
 #new-post-board {
   border-right: 1px solid rgb(163, 163, 212);
-  padding: 0px 5px 0px 5px;
+  padding: 1px 5px 0px 5px;
   width: 170px;
   /* text-align: center; */
   height: 29px;
@@ -279,11 +281,11 @@
 
 #new-post-header {
   /* padding-left: 5px; */
-  padding: 0px 5px 0px 5px;
+  padding: 6px 5px 0px 5px;
   overflow: scroll;
   height: 30px;
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
   flex: 1;
 
   /* margin-right: 50px; */
@@ -328,10 +330,15 @@
 /* 현재 보는 글 */
 
 #now-post-header {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(163, 163, 212);
   padding: 5px;
   /* height: 30px; */
   font-size: 16px;
+}
+
+#now-post-top {
+  display: flex;
+  justify-content: space-between;
 }
 
 #now-post-user-at {
@@ -340,16 +347,22 @@
 }
 
 #now-post-body {
-  border: 1px solid black;
+  border-bottom: 1px solid rgb(163, 163, 212);
   margin: 10px 0px 10px 0px;
-  min-height: 200px;
-  padding: 5px;
+  /* min-height: 200px; */
+  padding: 5px 5px 10px 5px;
 }
+
+#now-post-contents {
+  min-height: 250px;
+}
+
 #now-post-bottom {
   height: 25px;
   display: flex;
   gap: 20px;
   justify-content: center;
+  /* padding-bottom: ; */
 }
 .none {
   display: none;
