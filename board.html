@@ -322,7 +322,7 @@
               <button id="new-post-write">글 쓰기</button>
             </div>
           </div>
-          <div id="new-post" class="none">
+          <div id="new-post" class="">
             <div id="new-post-contents">
               <div id="new-post-head">
                 <div id="new-post-board">게시판을 선택해주세요</div>
@@ -336,7 +336,6 @@
                   <div>파일첨부</div>
                   <div>영상첨부</div>
                   <div>링크첨부</div>
-                  <div>일단첨부</div>
                 </div>
                 <div id="new-post-text-type">
                   <div>글자 모양</div>
@@ -356,21 +355,24 @@
               <button>글 작성</button>
             </div>
           </div>
-          <div id="now-post" class="">
+          <div id="now-post" class="none">
             <div id="now-post-header">
               <div id="now-post-top">
                 <div>현재게시판</div>
                 <button>즐겨찾기</button>
               </div>
-              <div id="now-post-headline">대충 제목</div>
+              <div id="now-post-headline">
+                <div>대충 제목</div>
+              </div>
               <div id="now-post-user-at">
                 <div>사용자명여덟글자</div>
                 <div>작성 시간</div>
               </div>
             </div>
             <div id="now-post-body">
-              <div id="now-post-contents">대충 내용</div>
-
+              <div id="now-post-contents">
+                <div>대충 내용</div>
+              </div>
               <div id="now-post-bottom">
                 <!-- <button id="now-post-favorites">즐겨찾기</button> -->
                 <button id="now-post-like">좋아요</button>
@@ -385,6 +387,3 @@
 </html>
 
 <!-- git add .;git commit -m "글페이지";git push origin develop -->
-
-<!-- 글자수가 오버됐을경우, 스크롤로 하고싶은데 제일 위까진 안올라가는데
-어떻게 해결해야할까? -->

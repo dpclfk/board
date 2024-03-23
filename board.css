@@ -334,27 +334,36 @@
   padding: 5px;
   /* height: 30px; */
   font-size: 16px;
+  /* display: flex; */
 }
 
 #now-post-top {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 #now-post-user-at {
+  height: 25px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
+#now-post-headline {
+  height: 25px;
+  display: flex;
+  align-items: center;
+}
 #now-post-body {
   border-bottom: 1px solid rgb(163, 163, 212);
-  margin: 10px 0px 10px 0px;
+  margin: 10px 0px 0px 0px;
   /* min-height: 200px; */
   padding: 5px 5px 10px 5px;
 }
 
 #now-post-contents {
-  min-height: 250px;
+  min-height: 300px;
 }
 
 #now-post-bottom {
