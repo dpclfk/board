@@ -9,8 +9,10 @@ const users = [];
 
 const getMessage = ({ header: { method, path }, body }) => {
   let message = "";
-  console.log(static[path]);
-  console.log(method);
+  console.log(static);
+  console.log(static[path] + "서버 스태틱패치");
+  console.log(method + "서버 메소드");
+  console.log(path + "서버패치");
 
   if (method == "GET") {
     console.log(static[path]);
