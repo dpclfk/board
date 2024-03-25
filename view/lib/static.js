@@ -3,7 +3,7 @@ const path = require("path");
 
 const staticObj = {};
 
-const rootPath = path.join(__dirname, "../");
+const rootPath = path.join(__dirname, "../", "views");
 
 console.log(rootPath);
 

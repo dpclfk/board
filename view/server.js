@@ -9,10 +9,6 @@ const users = [];
 
 const getMessage = ({ header: { method, path }, body }) => {
   let message = "";
-  console.log(static);
-  console.log(static[path] + "서버 스태틱패치");
-  console.log(method + "서버 메소드");
-  console.log(path + "서버패치");
 
   if (method == "GET") {
     console.log(static[path]);
@@ -24,7 +20,9 @@ const getMessage = ({ header: { method, path }, body }) => {
     if (path == "/") {
       message = makeResponse(
         "application/json",
-        JSON.stringify(users.map((item, idx) => ({ id: item.id, idx })))
+        JSON.stringify(
+          users.map((item, idx) => ({ headline: item.headline, idx }))
+        )
       );
     } else if (path == "/write") {
       users.push(body);

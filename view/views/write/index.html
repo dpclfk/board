@@ -3,46 +3,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>게시판</title>
-    <link rel="stylesheet" href="board.css" />
+    <link rel="stylesheet" href="../board.css" />
   </head>
   <body>
-    <div id="width-size">
-      <div id="header">
-        <div id="home-favorites">
-          <button>Home</button>
-          <button>즐겨찾기</button>
+    <form action="http://localhost:3000/write" method="post">
+      <div id="width-size">
+        <div id="header">
+          <div id="home-favorites">
+            <button>Home</button>
+            <button>즐겨찾기</button>
+          </div>
+          <div id="search">
+            <div id="search-type">글 제목</div>
+            <div id="search-box">검색어를 입력하세요</div>
+            <button>Q</button>
+          </div>
         </div>
-        <div id="search">
-          <div id="search-type">글 제목</div>
-          <div id="search-box">검색어를 입력하세요</div>
-          <button>Q</button>
-        </div>
-      </div>
-      <div id="main">
-        <div id="left-menu">
-          <ol>
-            <li>공지사항</li>
-            <li>자유게시판</li>
-            <li>게시판1</li>
-            <li>게시판2</li>
-            <li>게시판3</li>
-          </ol>
-        </div>
-        <div id="post">
-          <form action="http://localhost:3000" method="post">
+        <div id="main">
+          <div id="left-menu">
+            <ol>
+              <li>공지사항</li>
+              <li>자유게시판</li>
+              <li>게시판1</li>
+              <li>게시판2</li>
+              <li>게시판3</li>
+            </ol>
+          </div>
+          <div id="post">
             <div id="new-post" class="">
               <div id="new-post-contents">
                 <div id="new-post-head">
                   <div id="new-post-board">게시판을 선택해주세요</div>
+                  <!-- <div id="new-post-header"> -->
                   <div id="new-post-header">
-                    <div>
-                      <input
-                        type="text"
-                        name="headline"
-                        placeholder="HeadLine"
-                      />
-                    </div>
+                    <input type="text" name="headline" placeholder="HeadLine" />
                   </div>
+                  <!-- </div> -->
                 </div>
                 <div id="new-post-main">
                   <div id="new-post-file">
@@ -75,9 +71,9 @@
                 <button>글 작성</button>
               </div>
             </div>
-          </form>
+          </div>
         </div>
       </div>
-    </div>
+    </form>
   </body>
 </html>
