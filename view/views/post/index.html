@@ -1,0 +1,64 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>게시판</title>
+    <link rel="stylesheet" href="../board.css" />
+  </head>
+  <body>
+    <form action="http://localhost:3000/post" method="post">
+      <div id="width-size">
+        <div id="header">
+          <div id="home-favorites">
+            <button>Home</button>
+            <button>즐겨찾기</button>
+          </div>
+          <div id="search">
+            <div id="search-type">글 제목</div>
+            <div id="search-box">검색어를 입력하세요</div>
+            <button>Q</button>
+          </div>
+        </div>
+        <div id="main">
+          <div id="left-menu">
+            <ol>
+              <li>공지사항</li>
+              <li>자유게시판</li>
+              <li>게시판1</li>
+              <li>게시판2</li>
+              <li>게시판3</li>
+            </ol>
+          </div>
+          <div id="post">
+            <div id="now-post" class="">
+              <div id="now-post-header">
+                <div id="now-post-top">
+                  <div>현재게시판</div>
+                  <button>즐겨찾기</button>
+                </div>
+                <div id="now-post-headline">
+                  <div>대충 제목</div>
+                </div>
+                <div id="now-post-user-at">
+                  <div>사용자명여덟글자</div>
+                  <div>작성 시간</div>
+                </div>
+              </div>
+              <div id="now-post-body">
+                <div id="now-post-contents">
+                  <div>대충 내용</div>
+                </div>
+                <div id="now-post-bottom">
+                  <!-- <button id="now-post-favorites">즐겨찾기</button> -->
+                  <button id="now-post-like">좋아요</button>
+                  <button id="now-post-hate">싫어요</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="../index.js"></script>
+    </form>
+  </body>
+</html>
