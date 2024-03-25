@@ -15,7 +15,7 @@ const parseBody = (str) => {
   if (str.length == 0) return {};
 
   const body = {};
-  const bodyArr = str.split("&"); //구분이 &표시라 &표시로 잘라라
+  const bodyArr = str.split("&");
 
   bodyArr.forEach((item) => {
     const [name, value] = item.split("=");

@@ -13,7 +13,7 @@ const redirect = () => {
   return `HTTP/1.1 301 Moved Permenently
 Content-Type : text/thml
 Content-Length: 0
-connection Close
+connection: Close
 Location:/
 
 `;
