@@ -26,6 +26,8 @@ const getMessage = ({ header: { method, path }, body }) => {
       }
     }
   } else if (method == "POST") {
+    const today = new Date();
+    let time = `${today.getMinutes()} : ${today.getSeconds()}`;
     console.log(path);
     if (path == "/") {
       message = makeResponse(
@@ -33,19 +35,37 @@ const getMessage = ({ header: { method, path }, body }) => {
         JSON.stringify(
           users
             .map((item, idx) => ({
-              headline: item.headline,
-              posttext: item.posttext,
+              title: item.title,
+              text: item.text,
+              id: item.id,
+              createdAt: time,
               idx,
             }))
             .reverse()
-            .slice((body.page - 1) * body.count, body.page * body.count)
+            .slice((body.page - 1) * body.count, body.page * body.count),
+          (time = "")
         )
       );
     } else if (path == "/write") {
+      // users.push(createdAt);
       users.push(body);
+      console.log(users);
+      message = redirect();
+    } else if (path == "/board") {
       message = redirect();
     } else if (path == "/post") {
-      message = redirect();
+      message = makeResponse(
+        "application/json",
+        JSON.stringify(
+          users.map((item, idx) => ({
+            title: item.title,
+            text: item.text,
+            id: item.id,
+            createdAt: time,
+            idx,
+          }))
+        )
+      );
     }
   }
   return message;

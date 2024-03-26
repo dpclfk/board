@@ -1,7 +1,7 @@
-const showNumber = document.getElementById("show-number").innerHTML;
+// const showNumber = document.getElementById("show-number").innerHTML;
 
 let page = 1;
-let count = showNumber;
+let count = 4;
 
 // console.log(showNumber / 4);
 // console.log(item.length);
@@ -18,20 +18,21 @@ const getUsers = async () => {
     // const userArr = JSON.parse(
     //   await (await fetch("http://localhost:3000/list")).text()
     // );
+
     const postCommonOlElem = document.getElementById("post-common-ol");
+
     postCommonOlElem.innerHTML = "";
+    // nowPostHeadline.innerHTML = "";
     userArr.forEach((item) => {
       postCommonOlElem.innerHTML +=
         `<li class="post-list-li" id="post-number${item.idx + 1}">` +
         `<div class="post-type-number">${item.idx + 1}</div>` +
-        `<div class="post-type-head"><a href="/post/?${item.idx + 1}">${
-          item.headline
+        `<div class="post-type-head"><a href="/board/?${item.idx + 1}">${
+          item.title
         }</a></div>` +
         `<div class="utvg post-type-utvg">` +
-        `<div class="post-type-user">익명</div>` +
-        `<div class="post-type-time">` +
-        "작성시간" +
-        `</div>` +
+        `<div class="post-type-user">${item.id}</div>` +
+        `<div class="post-type-time">${item.createdAt}</div>` +
         `<div class="post-type-view">조회수</div>` +
         `<div class="post-type-like">추천수</div>` +
         `</div>` +
