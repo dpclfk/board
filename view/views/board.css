@@ -1,6 +1,16 @@
 * {
   box-sizing: border-box;
 }
+body {
+  margin: 0px;
+}
+
+#backimg {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 
 #width-size {
   /* width: 1500px; */
@@ -8,6 +18,8 @@
   /* overflow: auto; */
   min-width: 1000px;
   margin: auto;
+  background-color: white;
+  height: 100%;
 }
 /* 상단바 시작 */
 #header {
@@ -235,12 +247,29 @@
   justify-content: space-between;
 }
 
+#paging {
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#paging li {
+  display: block;
+  float: left;
+}
+
 #new-post-button {
   height: 30px;
   display: flex;
   justify-content: end;
   /* margin: 10px 0 10px 0; */
   /* align-self: end; */
+}
+
+#new-post-write {
+  height: 30px;
 }
 
 /* 메인페이지 끝 */
@@ -297,7 +326,13 @@
   /* width: 700px; */
   /* margin-bottom: 10px; */
   margin-top: 10px;
-  border: 1px solid rgb(163, 163, 212);
+  border-top: 1px solid rgb(163, 163, 212);
+  /* display: flex; */
+}
+
+#new-post-file-type {
+  border-left: 1px solid rgb(163, 163, 212);
+  border-right: 1px solid rgb(163, 163, 212);
 }
 
 #new-post-file {
@@ -310,8 +345,12 @@
 
 #new-post-text-type {
   height: 30px;
-  border-bottom: 1px solid rgb(163, 163, 212);
+  /* border-bottom: 1px solid rgb(163, 163, 212); */
   padding: 5px;
+  display: flex;
+}
+
+#new-post-text-div {
   display: flex;
 }
 
@@ -327,6 +366,10 @@
   display: flex;
   justify-content: end;
   margin-top: 10px;
+}
+
+#new-post-create-button {
+  height: 30px;
 }
 
 /* 현재 보는 글 */
@@ -345,6 +388,10 @@
   align-items: center;
 }
 
+#now-post-top button {
+  height: 25px;
+}
+
 #now-post-user-at {
   height: 25px;
   display: flex;
@@ -354,8 +401,10 @@
 
 #now-post-headline {
   height: 25px;
-  display: flex;
+  padding-top: 3px;
+  /* display: flex; */
   align-items: center;
+  overflow: hidden;
 }
 #now-post-body {
   border-bottom: 1px solid rgb(163, 163, 212);

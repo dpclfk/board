@@ -14,9 +14,21 @@ const redirect = () => {
 Content-Type : text/thml
 Content-Length: 0
 connection: Close
-Location:/
+Location: /
 
 `;
 };
 
-module.exports = { makeResponse, redirect };
+const sendFile = (type, body) => {
+  const headerBuffer = Buffer.from(`${makeHeader(type, body.length)}
+
+`);
+  // ("\r\n");
+  const tempBuffer = Buffer.concat(
+    [headerBuffer, body],
+    headerBuffer.length + body.length
+  );
+  return tempBuffer;
+};
+
+module.exports = { makeResponse, redirect, sendFile };

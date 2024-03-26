@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../board.css" />
   </head>
   <body>
+    <img id="backimg" src="../imgs/back.png" alt="" />
     <form action="http://localhost:3000/write" method="post">
       <div id="width-size">
         <div id="header">
@@ -42,34 +43,38 @@
                   />
                 </div>
                 <div id="new-post-main">
-                  <div id="new-post-file">
-                    <div>이미지첨부</div>
-                    <div>파일첨부</div>
-                    <div>영상첨부</div>
-                    <div>링크첨부</div>
+                  <div id="new-post-file-type">
+                    <div id="new-post-file">
+                      <div>이미지첨부</div>
+                      <div>파일첨부</div>
+                      <div>영상첨부</div>
+                      <div>링크첨부</div>
+                    </div>
+                    <div id="new-post-text-type">
+                      <div>글자 모양</div>
+                      <div>글자 크기</div>
+                      <div>글자 색상</div>
+                      <div>글자 배경</div>
+                      <div>글자 기울기</div>
+                      <div>글자 굵게</div>
+                      <div>글자 밑줄</div>
+                    </div>
                   </div>
-                  <div id="new-post-text-type">
-                    <div>글자 모양</div>
-                    <div>글자 크기</div>
-                    <div>글자 색상</div>
-                    <div>글자 배경</div>
-                    <div>글자 기울기</div>
-                    <div>글자 굵게</div>
-                    <div>글자 밑줄</div>
+                  <div id="new-post-text-div">
+                    <input
+                      id="new-post-text"
+                      type="text"
+                      name="posttext"
+                      placeholder="PostText"
+                    />
                   </div>
-                  <input
-                    id="new-post-text"
-                    type="text"
-                    name="posttext"
-                    placeholder="PostText"
-                  />
                 </div>
               </div>
-              <a href="/post/"
-                ><div id="new-post-create">
-                  <button>글 작성</button>
-                </div>
-              </a>
+              <div id="new-post-create">
+                <a href="/post/"
+                  ><button id="new-post-create-button">글 작성</button></a
+                >
+              </div>
             </div>
           </div>
         </div>
