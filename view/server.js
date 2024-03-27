@@ -27,7 +27,6 @@ const getMessage = ({ header: { method, path }, body }) => {
     }
   } else if (method == "POST") {
     const today = new Date();
-    let time = `${today.getMinutes()} : ${today.getSeconds()}`;
     console.log(path);
     if (path == "/") {
       message = makeResponse(
@@ -38,7 +37,7 @@ const getMessage = ({ header: { method, path }, body }) => {
               title: item.title,
               text: item.text,
               id: item.id,
-              createdAt: time,
+              createdAt: item.createdAt,
               idx,
             }))
             .reverse()
@@ -48,7 +47,8 @@ const getMessage = ({ header: { method, path }, body }) => {
       );
     } else if (path == "/write") {
       // users.push(createdAt);
-      users.push(body);
+      let time = `${today.getMinutes()} : ${today.getSeconds()}`;
+      users.push({ ...body, createdAt: time, views: 0 });
       console.log(users);
       message = redirect();
     } else if (path == "/board") {
