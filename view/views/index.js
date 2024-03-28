@@ -13,8 +13,14 @@ const getUsers = async () => {
       mode: "no-cors",
       body: `page=${page}&count=${count}`,
     });
+    console.log(usersRes);
+
     const usersData = await usersRes.text();
+    console.log(usersData);
+
     const userArr = JSON.parse(usersData);
+    console.log(userArr);
+
     // const userArr = JSON.parse(
     //   await (await fetch("http://localhost:3000/list")).text()
     // );
